@@ -1,0 +1,4 @@
+[
+  { "label": "valid_format_fixture", "iban": "DE89 3704 0044 0532 0130 00", "expectedValid": true },
+  { "label": "bad_checksum_fixture", "iban": "DE00 3704 0044 0532 0130 00", "expectedValid": false }
+]
