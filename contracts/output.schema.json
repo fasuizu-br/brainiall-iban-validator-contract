@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BRAINIALL IBAN validation result",
+  "type": "object",
+  "required": ["success", "valid", "reasons", "scope", "accountExistsVerified", "accountHolderVerified", "verificationOfPayeePerformed"],
+  "properties": {
+    "success": { "const": true },
+    "valid": { "type": "boolean" },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "countryCode": { "type": ["string", "null"] },
+    "masked": { "type": "string" },
+    "fingerprint": { "type": ["string", "null"] },
+    "scope": { "const": "format_and_mod97_only" },
+    "accountExistsVerified": { "const": false },
+    "accountHolderVerified": { "const": false },
+    "verificationOfPayeePerformed": { "const": false }
+  }
+}
