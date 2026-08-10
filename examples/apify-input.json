@@ -1,0 +1,7 @@
+{
+  "action": "validate_bulk",
+  "ibans": [
+    "GB82 WEST 1234 5698 7654 32",
+    "GB00 WEST 1234 5698 7654 32"
+  ]
+}
